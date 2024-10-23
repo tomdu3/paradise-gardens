@@ -13,3 +13,5 @@
 - Photo by Max Vakhtbovycn: https://www.pexels.com/photo/exterior-of-residential-mansion-with-terrace-6032280/
 - Photo by Max Vakhtbovycn: https://www.pexels.com/photo/cottage-with-veranda-and-trees-growing-in-backyard-7061659/
 - Photo by Thomas P: https://www.pexels.com/photo/houses-in-village-24524484/
+- Photo from https://stackoverflow.com/questions/53162923/get-a-location-image-from-google-map-with-a-mark-for-free
+- 
