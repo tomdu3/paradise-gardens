@@ -166,6 +166,9 @@
               required
             />
 
+            <label for="phone" class="block mb-2">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" class="border border-gray-300 rounded-lg p-2 w-full mb-4" pattern="^\+49[1-9][0-9\s\-\/]{0,12}$" placeholder="+49 123 4567890" required>
+
             <label for="message" class="block mb-2">Message</label>
             <textarea
               name="message"
@@ -178,14 +181,11 @@
 
             <button
               type="submit"
-              class="bg-green-600 text-white rounded-lg p-2 hover:bg-green-700"
+              class="bg-blue-600 text-white rounded-lg p-2 hover:bg-green-700"
             >
               Submit
             </button>
           </form>
-          <div id="contact-img" class="mt-6">
-            <!-- Optional image here -->
-          </div>
         </div>
       </section>
     </main>
