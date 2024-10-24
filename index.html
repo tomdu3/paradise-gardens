@@ -8,64 +8,68 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-gray-100">
-    <header class="mx-auto px-10 py-4 bg-gray-600 text-white font-bold text-2xl">
-        <div class="container mx-auto flex justify-between items-center">
-          <!-- Logo on the left -->
-          <div class="logo text-2xl font-bold">
-            <a href="#" id="logo">PG</a>
-          </div>
-          
-          <!-- Centered Navigation Links -->
-          <nav class="flex-grow text-center">
-            <ul class="flex justify-center space-x-4">
-              <li><a href="#" class="hover:underline">Home</a></li>
-              <li><a href="#about" class="hover:underline">About</a></li>
-            </ul>
-          </nav>
-      
-          <!-- Contact Link on the right -->
-          <div class="contact">
-            <a href="#contact" class="hover:underline">Contact</a>
-          </div>
+    <header
+      class="mx-auto px-10 py-4 bg-gray-600 text-white font-bold text-2xl"
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo on the left -->
+        <div class="logo text-2xl font-bold">
+          <a href="#" id="logo">PG</a>
         </div>
-      </header>
+
+        <!-- Centered Navigation Links -->
+        <nav class="flex-grow text-center">
+          <ul class="flex justify-center space-x-4">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <li><a href="#about" class="hover:underline">About</a></li>
+          </ul>
+        </nav>
+
+        <!-- Contact Link on the right -->
+        <div class="contact">
+          <a href="#contact" class="hover:underline">Contact</a>
+        </div>
+      </div>
+    </header>
 
     <main>
       <!-- Hero Section -->
-      <section id="hero" class="flex flex-col items-center bg-blue-200 py-10">
-        <div class="container mx-auto text-center">
-          <h1 class="text-4xl font-bold">Welcome to Paradise Gardens</h1>
-          <p class="mt-4 text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
-            quidem.
-          </p>
-          <div id="hero-img" class="mt-6">
-            <img
-              src="./assets/imgs/pexels-magic-k-24827758-6728933.jpg"
-              alt="hero image"
-              class="rounded-lg shadow-lg"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- Features Marquee Section -->
-      <section id="features" class="my-10">
-        <div class="container mx-auto flex overflow-x-auto space-x-4">
-          <div class="scroll-item flex-shrink-0">
-            <img
-              src="./assets/imgs/pexels-mikebirdy-242258.jpg"
-              alt="fountain in the garden"
-              class="h-48 w-auto rounded-lg shadow-md"
-            />
-          </div>
-          <div class="scroll-item flex-shrink-0">
-            <img
-              src="./assets/imgs/pexels-pth686817-24524484.jpg"
-              alt="backyard"
-              class="h-48 w-auto rounded-lg shadow-md"
-            />
-          </div>
+<section id="hero" class="relative flex items-center justify-center h-[70vh] bg-gray-600 overflow-hidden">
+    <img
+      src="./assets/imgs/pexels-magic-k-24827758-6728933.jpg"
+      alt="hero image"
+      class="absolute inset-0 w-full h-full object-cover z-0 animate-zoom"
+    />
+    <div
+      id="hero-text"
+      class="relative z-10 text-center bg-blue-950 bg-opacity-50 rounded-lg p-20 animate-text"
+    >
+      <h1 class="text-4xl font-bold text-white">
+        Welcome to Paradise Gardens
+      </h1>
+      <p class="mt-4 text-lg text-white">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quidem.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Features Marquee Section -->
+  <section id="features" class="relative pt-20 z-20">
+    <div class="container mx-auto flex overflow-x-auto space-x-4 max-w-full">
+      <div class="scroll-item flex-shrink-0">
+        <img
+          src="./assets/imgs/pexels-mikebirdy-242258.jpg"
+          alt="fountain in the garden"
+          class="h-48 w-auto rounded-lg shadow-md"
+        />
+      </div>
+      <div class="scroll-item flex-shrink-0">
+        <img
+          src="./assets/imgs/pexels-pth686817-24524484.jpg"
+          alt="backyard"
+          class="h-48 w-auto rounded-lg shadow-md"
+        />
+      </div>
           <div class="scroll-item flex-shrink-0">
             <img
               src="./assets/imgs/pexels-advaith-nair-1838650-6363742.jpg"
@@ -167,7 +171,15 @@
             />
 
             <label for="phone" class="block mb-2">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" class="border border-gray-300 rounded-lg p-2 w-full mb-4" pattern="^\+49[1-9][0-9\s\-\/]{0,12}$" placeholder="+49 123 4567890" required>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="border border-gray-300 rounded-lg p-2 w-full mb-4"
+              pattern="^\+49[1-9][0-9\s\-\/]{0,12}$"
+              placeholder="+49 123 4567890"
+              required
+            />
 
             <label for="message" class="block mb-2">Message</label>
             <textarea
