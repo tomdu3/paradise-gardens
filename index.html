@@ -1,130 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paradise Gardens</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Fonts Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <header>
-        <div class="logo container">
-            <div id="logo">
-                PG
-            </div>
-        </div>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <header class="mx-auto p-4 bg-gray-600 text-white font-bold text-2xl">
+        <div class="container mx-auto flex justify-between items-center">
+          <!-- Logo on the left -->
+          <div class="logo text-2xl font-bold">
+            <a href="#" id="logo">PG</a>
+          </div>
+          
+          <!-- Centered Navigation Links -->
+          <nav class="flex-grow text-center">
+            <ul class="flex justify-center space-x-4">
+              <li><a href="#" class="hover:underline">Home</a></li>
+              <li><a href="#about" class="hover:underline">About</a></li>
             </ul>
-        </nav>
-    </header>
+          </nav>
+      
+          <!-- Contact Link on the right -->
+          <div class="contact">
+            <a href="#contact" class="hover:underline">Contact</a>
+          </div>
+        </div>
+      </header>
 
     <main>
-        <!-- hero section -->
-        <section id="hero">
-            <div class="container">
-                <div id="hero-text">
-                    <h1>Welcome to Paradise Gardens</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quidem.</p>
-                </div>
-                <div id="hero-img">
-                    <img src="./assets/imgs/pexels-magic-k-24827758-6728933.jpg" alt="hero image">
-                </div>
-            </div>
-        </section>
+      <!-- Hero Section -->
+      <section id="hero" class="flex flex-col items-center bg-blue-200 py-10">
+        <div class="container mx-auto text-center">
+          <h1 class="text-4xl font-bold">Welcome to Paradise Gardens</h1>
+          <p class="mt-4 text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+            quidem.
+          </p>
+          <div id="hero-img" class="mt-6">
+            <img
+              src="./assets/imgs/pexels-magic-k-24827758-6728933.jpg"
+              alt="hero image"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
 
-        <!-- features marquee section -->
-        <section id="features">
-            <div class="container marquee">
-                <div class="scroll-item">
-                    <img src="./assets/imgs/pexels-mikebirdy-242258.jpg" alt="fountain in the garden">
-                </div>
-                <div class="scroll-item">
-                    <img src="./assets/imgs/pexels-adrian-olive-242258.jpg" alt="fountain in the garden">
-                </div>
-                <div class="scroll-item">
-                    <img src="./assets/imgs/pexels-pth686817-24524484.jpg" alt="backyard">
-                </div>
-                <div class="scroll-item">
-                    <img src="./assets/imgs/pexels-advaith-nair-1838650-6363742.jpg" alt="trimming lawn">
-                </div>
-                <div class="scroll-item">
-                    <img src="./assets/imgs/pexels-anastasia-shuraeva-5126445.jpg" alt="wooden fence">
-                </div>
-                <div class="scroll-item">
-                    <img src="./assets/imgs/pexels-cheezuptg-1247023.jpg" alt="fence rain">
-                </div>
-                <div class="scroll-item">
-                    <img src="./assets/imgs/pexels-freestockpro-7768290.jpg" alt="greenhouse build">
-                </div>
-                <div class="scroll-item">
-                    <img src="./assets/imgs/pexels-heyho-6032280.jpg" alt="backyard trees">
-                </div>
-                <div class="scroll-item">
-                    <img src="./assets/imgs/pexels-heyho-7061659.jpg" alt="backyard trees and grass">
-                </div>
-                <div class="scroll-item">
-                    <img src="./assets/imgs/pexels-stitch-24595770.jpg" alt="hedge trimming">
-                </div>
-                <div class="scroll-item">
-                    <img src="./assets/imgs/pexels-zahid-12887876.jpg" alt="garden sprinklers">
-                </div>
-            </div>
-        </section>
+      <!-- Features Marquee Section -->
+      <section id="features" class="my-10">
+        <div class="container mx-auto flex overflow-x-auto space-x-4">
+          <div class="scroll-item flex-shrink-0">
+            <img
+              src="./assets/imgs/pexels-mikebirdy-242258.jpg"
+              alt="fountain in the garden"
+              class="h-48 w-auto rounded-lg shadow-md"
+            />
+          </div>
+          <div class="scroll-item flex-shrink-0">
+            <img
+              src="./assets/imgs/pexels-pth686817-24524484.jpg"
+              alt="backyard"
+              class="h-48 w-auto rounded-lg shadow-md"
+            />
+          </div>
+          <div class="scroll-item flex-shrink-0">
+            <img
+              src="./assets/imgs/pexels-advaith-nair-1838650-6363742.jpg"
+              alt="trimming lawn"
+              class="h-48 w-auto rounded-lg shadow-md"
+            />
+          </div>
+          <div class="scroll-item flex-shrink-0">
+            <img
+              src="./assets/imgs/pexels-anastasia-shuraeva-5126445.jpg"
+              alt="wooden fence"
+              class="h-48 w-auto rounded-lg shadow-md"
+            />
+          </div>
+          <div class="scroll-item flex-shrink-0">
+            <img
+              src="./assets/imgs/pexels-cheezuptg-1247023.jpg"
+              alt="fence rain"
+              class="h-48 w-auto rounded-lg shadow-md"
+            />
+          </div>
+          <div class="scroll-item flex-shrink-0">
+            <img
+              src="./assets/imgs/pexels-freestockpro-7768290.jpg"
+              alt="greenhouse build"
+              class="h-48 w-auto rounded-lg shadow-md"
+            />
+          </div>
+          <div class="scroll-item flex-shrink-0">
+            <img
+              src="./assets/imgs/pexels-heyho-6032280.jpg"
+              alt="backyard trees"
+              class="h-48 w-auto rounded-lg shadow-md"
+            />
+          </div>
+          <div class="scroll-item flex-shrink-0">
+            <img
+              src="./assets/imgs/pexels-heyho-7061659.jpg"
+              alt="backyard trees and grass"
+              class="h-48 w-auto rounded-lg shadow-md"
+            />
+          </div>
+          <div class="scroll-item flex-shrink-0">
+            <img
+              src="./assets/imgs/pexels-stitch-24595770.jpg"
+              alt="hedge trimming"
+              class="h-48 w-auto rounded-lg shadow-md"
+            />
+          </div>
+          <div class="scroll-item flex-shrink-0">
+            <img
+              src="./assets/imgs/pexels-zahid-12887876.jpg"
+              alt="garden sprinklers"
+              class="h-48 w-auto rounded-lg shadow-md"
+            />
+          </div>
+        </div>
+      </section>
 
-        <!-- about section -->
-        <section id="about">
-            <div class="container">
-                <div id="about-text">
-                    <h1>About Us</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quidem.</p>
-                </div>
-                <div id="about-img">
-                    <img src="./assets/imgs/HILmr.png" alt="about image">
-                </div>
-            </div>
-        </section>
+      <!-- About Section -->
+      <section id="about" class="py-10">
+        <div class="container mx-auto flex flex-col items-center">
+          <h1 class="text-3xl font-bold">About Us</h1>
+          <p class="mt-4 text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+            quidem.
+          </p>
+          <div id="about-img" class="mt-6">
+            <img
+              src="./assets/imgs/HILmr.png"
+              alt="about image"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
 
-        <!-- contact section -->
-        <section id="contact">
-            <div class="container">
-                <div id="contact-text">
-                    <h1>Contact Us</h1>
-                    <form action="" method="post">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name" required>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required>
-                        <label for="phone">Phone</label>
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone" pattern="^\+49[1-9][0-9\s\-\/]{0,12}$" placeholder="+49 123 4567890" required>
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </section>
+      <!-- Contact Section -->
+      <section id="contact" class="py-10">
+        <div class="container mx-auto flex flex-col items-center">
+          <h1 class="text-3xl font-bold">Contact Us</h1>
+          <form action="" method="post" class="mt-6 w-full max-w-md">
+            <label for="name" class="block mb-2">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="border border-gray-300 rounded-lg p-2 w-full mb-4"
+              required
+            />
+
+            <label for="email" class="block mb-2">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="border border-gray-300 rounded-lg p-2 w-full mb-4"
+              required
+            />
+
+            <label for="message" class="block mb-2">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              class="border border-gray-300 rounded-lg p-2 w-full mb-4"
+              required
+            ></textarea>
+
+            <button
+              type="submit"
+              class="bg-green-600 text-white rounded-lg p-2 hover:bg-green-700"
+            >
+              Submit
+            </button>
+          </form>
+          <div id="contact-img" class="mt-6">
+            <!-- Optional image here -->
+          </div>
+        </div>
+      </section>
     </main>
-
-    <footer>
-        <div id="creator">
-            <p>Created by: TDCode</p>
-        </div>
-        <ul class="social-media">
-            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-        </ul>
-        <div id="copyright">
-            <p>&copy; Paradise Gardens. Copyright <span id="year">2024</span>. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-</body>
+  </body>
 </html>
