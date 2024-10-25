@@ -167,3 +167,44 @@ h6 {
     object-fit: cover; /* Cover the container */
   }
 }
+
+/* Contact */
+
+#contact {
+  @media (max-width: 768px) {
+    padding: 15px;
+  }
+}
+
+.contact-form-container, .address-container {
+  width: 100%; /* Full width of the parent */
+  max-width: 40vw; /* Adjust as necessary to match */
+  padding: 20px; /* Add padding for consistency */
+  @media (max-width: 768px) {
+    max-width: 90%;
+  }
+}
+
+.contact-form-container {
+  border: 1px solid #ccc; /* Optional: add border for visual separation */
+  border-radius: 8px; /* Optional: rounded corners */
+  background-color: #fff; /* Optional: background color */
+}
+
+.address-image {
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+  @media (max-width: 768px) {
+    max-width: 300px; /* Adjust for smaller screens */
+  }
+}
+
+.address-details {
+  margin-top: 10px;
+}
+
+.address-line {
+  margin: 5px 0; /* Spacing between address lines */
+  font-size: 1rem; /* Adjust font size as needed */
+  color: #333; /* Color of address text */
+}

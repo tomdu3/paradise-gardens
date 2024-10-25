@@ -118,10 +118,10 @@
       </section>
 
       <!-- Contact Section -->
-      <section id="contact" class="py-10">
-        <div class="container mx-auto flex flex-col items-center">
+      <section id="contact" class="py-10 container mx-auto flex md:flex-row flex-col-reverse md:justify-around justify-center md:items-start items-center">
+        <div class="contact-form-container flex flex-col items-center w-full max-w-md">
           <h1 class="text-3xl font-bold">Contact Us</h1>
-          <form action="" method="post" class="mt-6 w-full max-w-md">
+          <form action="" method="post" class="mt-6 w-full">
             <label for="name" class="block mb-2">Name</label>
             <input
               type="text"
@@ -130,7 +130,7 @@
               class="border border-gray-300 rounded-lg p-2 w-full mb-4"
               required
             />
-
+      
             <label for="email" class="block mb-2">Email</label>
             <input
               type="email"
@@ -139,7 +139,7 @@
               class="border border-gray-300 rounded-lg p-2 w-full mb-4"
               required
             />
-
+      
             <label for="phone" class="block mb-2">Phone Number:</label>
             <input
               type="tel"
@@ -150,7 +150,7 @@
               placeholder="+49 123 4567890"
               required
             />
-
+      
             <label for="message" class="block mb-2">Message</label>
             <textarea
               name="message"
@@ -160,7 +160,7 @@
               class="border border-gray-300 rounded-lg p-2 w-full mb-4"
               required
             ></textarea>
-
+      
             <button
               type="submit"
               class="bg-blue-600 text-white rounded-lg p-2 hover:bg-green-700"
@@ -169,7 +169,16 @@
             </button>
           </form>
         </div>
+        <div class="address-container flex flex-col items-center text-center">
+          <img src="./assets/imgs/pexels-gustavo-fring-5163419.jpg" alt="lawn mower" class="address-image mb-4 rounded-lg" />
+          <div class="address-details">
+            <p class="address-line">123 Main Street</p>
+            <p class="address-line">City, State</p>
+            <p class="address-line">12345</p>
+          </div>
+        </div>
       </section>
+      
     </main>
   </body>
 </html>
