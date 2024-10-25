@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paradise Gardens</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="bg-gray-100">
     <header
@@ -34,99 +45,58 @@
 
     <main>
       <!-- Hero Section -->
-<section id="hero" class="relative flex items-center justify-center h-[70vh] bg-gray-600 overflow-hidden">
-    <img
-      src="./assets/imgs/pexels-magic-k-24827758-6728933.jpg"
-      alt="hero image"
-      class="absolute inset-0 w-full h-full object-cover z-0 animate-zoom"
-    />
-    <div
-      id="hero-text"
-      class="relative z-10 text-center bg-blue-950 bg-opacity-50 rounded-lg p-20 animate-text"
-    >
-      <h1 class="text-4xl font-bold text-white">
-        Welcome to Paradise Gardens
-      </h1>
-      <p class="mt-4 text-lg text-white">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quidem.
-      </p>
-    </div>
-  </section>
-  
-  <!-- Features Marquee Section -->
-  <section id="features" class="relative pt-20 z-20">
-    <div class="container mx-auto flex overflow-x-auto space-x-4 max-w-full">
-      <div class="scroll-item flex-shrink-0">
+      <section
+        id="hero"
+        class="relative flex items-center justify-center h-[70vh] bg-gray-600 overflow-hidden"
+      >
         <img
-          src="./assets/imgs/pexels-mikebirdy-242258.jpg"
-          alt="fountain in the garden"
-          class="h-48 w-auto rounded-lg shadow-md"
+          src="./assets/imgs/pexels-magic-k-24827758-6728933.jpg"
+          alt="hero image"
+          class="absolute inset-0 w-full h-full object-cover z-0 animate-zoom"
         />
-      </div>
-      <div class="scroll-item flex-shrink-0">
-        <img
-          src="./assets/imgs/pexels-pth686817-24524484.jpg"
-          alt="backyard"
-          class="h-48 w-auto rounded-lg shadow-md"
-        />
-      </div>
-          <div class="scroll-item flex-shrink-0">
-            <img
-              src="./assets/imgs/pexels-advaith-nair-1838650-6363742.jpg"
-              alt="trimming lawn"
-              class="h-48 w-auto rounded-lg shadow-md"
-            />
-          </div>
-          <div class="scroll-item flex-shrink-0">
-            <img
-              src="./assets/imgs/pexels-anastasia-shuraeva-5126445.jpg"
-              alt="wooden fence"
-              class="h-48 w-auto rounded-lg shadow-md"
-            />
-          </div>
-          <div class="scroll-item flex-shrink-0">
-            <img
-              src="./assets/imgs/pexels-cheezuptg-1247023.jpg"
-              alt="fence rain"
-              class="h-48 w-auto rounded-lg shadow-md"
-            />
-          </div>
-          <div class="scroll-item flex-shrink-0">
-            <img
-              src="./assets/imgs/pexels-freestockpro-7768290.jpg"
-              alt="greenhouse build"
-              class="h-48 w-auto rounded-lg shadow-md"
-            />
-          </div>
-          <div class="scroll-item flex-shrink-0">
-            <img
-              src="./assets/imgs/pexels-heyho-6032280.jpg"
-              alt="backyard trees"
-              class="h-48 w-auto rounded-lg shadow-md"
-            />
-          </div>
-          <div class="scroll-item flex-shrink-0">
-            <img
-              src="./assets/imgs/pexels-heyho-7061659.jpg"
-              alt="backyard trees and grass"
-              class="h-48 w-auto rounded-lg shadow-md"
-            />
-          </div>
-          <div class="scroll-item flex-shrink-0">
-            <img
-              src="./assets/imgs/pexels-stitch-24595770.jpg"
-              alt="hedge trimming"
-              class="h-48 w-auto rounded-lg shadow-md"
-            />
-          </div>
-          <div class="scroll-item flex-shrink-0">
-            <img
-              src="./assets/imgs/pexels-zahid-12887876.jpg"
-              alt="garden sprinklers"
-              class="h-48 w-auto rounded-lg shadow-md"
-            />
-          </div>
+        <div
+          id="hero-text"
+          class="relative z-10 text-center bg-blue-950 bg-opacity-50 rounded-lg p-20 animate-text"
+        >
+          <h1 class="text-4xl font-bold text-white">
+            Welcome to Paradise Gardens
+          </h1>
+          <p class="mt-4 text-lg text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+            quidem.
+          </p>
         </div>
+      </section>
+
+      <!-- Features Carousel Section -->
+      <section
+      id="features"
+      class="relative pt-10 z-20 flex flex-row justify-around items-center"
+      >
+      <div id="prev-btn" class="btn-container">
+        <button class="btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+      </div>
+      <ul class="flex flex-row justify-center items-center gap-10">
+        <li class="slide">
+          <img
+            src="./assets/imgs/pexels-advaith-nair-1838650-6363742.jpg"
+            alt="grass trimming"
+          />
+        </li>
+        <li class="slide">
+          <img
+            src="./assets/imgs/pexels-anastasia-shuraeva-5126445.jpg"
+            alt="grass trimming"
+          />
+        </li>
+      </ul>
+      <div id="next-btn" class="btn-container">
+        <button class="btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
       </section>
 
       <!-- About Section -->
