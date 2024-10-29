@@ -113,7 +113,10 @@ h6 {
 
     .slide {
       flex: 0 0 50%; /* Each slide takes 50% width to show two at a time */
-      
+      @media (max-width: 768px) {
+        flex: 0 0 50%;
+      }
+
       img {
         width:40vw;
         height: 25vw;
@@ -121,6 +124,10 @@ h6 {
         transition: transform 0.5s ease;
         &:hover {
           transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+          width: 85%;
         }
       }
     }
