@@ -1,32 +1,19 @@
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
+/* Universal Reset and Typography */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/*
-    2. Remove default margin
-  */
 * {
   margin: 0;
 }
 
-/*
-    Typographic tweaks!
-    3. Add accessible line-height
-    4. Improve text rendering
-  */
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
-/*
-    5. Improve media defaults
-  */
 img,
 picture,
 video,
@@ -36,9 +23,6 @@ svg {
   max-width: 100%;
 }
 
-/*
-    6. Remove built-in form typography styles
-  */
 input,
 button,
 textarea,
@@ -46,9 +30,6 @@ select {
   font: inherit;
 }
 
-/*
-    7. Avoid text overflows
-  */
 p,
 h1,
 h2,
@@ -59,16 +40,12 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/*
-    8. Create a root stacking context
-  */
 #root,
 #__next {
   isolation: isolate;
 }
 
 /* Logo */
-
 #logo {
   color: darkgray;
   font-size: 38px;
@@ -80,14 +57,13 @@ h6 {
 }
 
 /* Hero */
-
 #hero-text {
-  display: relative;
+  position: relative;
   z-index: 1;
 }
 
 #hero-img {
-  display: absolute;
+  position: absolute;
   z-index: 0;
 }
 
@@ -107,8 +83,8 @@ h6 {
 }
 
 .animate-text {
-  display: inline-block; /* Allows for scaling */
-  animation: stretch 2s ease forwards; /* Adjust duration and easing as needed */
+  display: inline-block;
+  animation: stretch 2s ease forwards;
 }
 
 @keyframes zoom-in {
@@ -124,98 +100,102 @@ h6 {
   animation: zoom-in 2s ease-in-out forwards;
 }
 
-/* Features */
+/* Features Carousel */
 #features {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; */
+  .carousel-wrapper {
+    overflow: hidden;
+    width: 90%;
+  }
+
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+
+    .slide {
+      flex: 0 0 50%; /* Each slide takes 50% width to show two at a time */
+      
+      img {
+        width:40vw;
+        height: 25vw;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
 
   .btn-container {
     margin: 10px 0;
     cursor: pointer;
-    width: 50px; /* Set fixed width */
-    height: 50px; /* Set fixed height */
-    border-radius: 50%; /* Make it circular */
-    padding: 0; /* Remove padding to keep the circle shape */
-    display: flex; /* Use flexbox to center the icon */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    border: 1px solid gray; /* Border around the circle */
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
-  }
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    transition: transform 0.3s ease;
 
-  .btn i {
-    margin: 0; /* Remove default margin */
-    font-size: 20px; /* Adjust icon size if needed */
-  }
-
-  ul {
-    width: 80%; /* Set the width of the images */
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-  }
-
-  .slide {
-    flex: 1; /* Allow slides to grow equally */
-  }
-
-  img {
-    width: 100%; /* Take full width of the slide */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 400px; /* Set a fixed maximum height */
-    object-fit: cover; /* Cover the container */
+    .btn {
+      i {
+        margin: 0;
+        font-size: 20px;
+      }
+    }
   }
 }
 
 /* About */
-
 #about-img {
-  width: 300px; /* Full width of the parent */
-  max-width: 40vw; /* Adjust as necessary to match */
-  padding: 20px; /* Add padding for consistency */
+  width: 300px;
+  max-width: 40vw;
+  padding: 20px;
+
   @media (max-width: 768px) {
     max-width: 90%;
   }
 }
 
 /* Contact */
-
 #contact {
-  @media (max-width: 768px) {
-    padding: 15px;
+  padding: 15px;
+
+  .contact-form-container,
+  .address-container {
+    width: 100%;
+    max-width: 40vw;
+    padding: 20px;
+
+    @media (max-width: 768px) {
+      max-width: 90%;
+    }
+
+    .address-image {
+      width: 100%;
+      height: auto;
+
+      @media (max-width: 768px) {
+        max-width: 300px;
+      }
+    }
   }
-}
 
-.contact-form-container, .address-container {
-  width: 100%; /* Full width of the parent */
-  max-width: 40vw; /* Adjust as necessary to match */
-  padding: 20px; /* Add padding for consistency */
-  @media (max-width: 768px) {
-    max-width: 90%;
+  .contact-form-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
   }
-}
 
-.contact-form-container {
-  border: 1px solid #ccc; /* Optional: add border for visual separation */
-  border-radius: 8px; /* Optional: rounded corners */
-  background-color: #fff; /* Optional: background color */
-}
+  .address-details {
+    margin-top: 10px;
 
-.address-image {
-  width: 100%; /* Full width */
-  height: auto; /* Maintain aspect ratio */
-  @media (max-width: 768px) {
-    max-width: 300px; /* Adjust for smaller screens */
+    .address-line {
+      margin: 5px 0;
+      font-size: 1rem;
+      color: #333;
+    }
   }
-}
-
-.address-details {
-  margin-top: 10px;
-}
-
-.address-line {
-  margin: 5px 0; /* Spacing between address lines */
-  font-size: 1rem; /* Adjust font size as needed */
-  color: #333; /* Color of address text */
 }

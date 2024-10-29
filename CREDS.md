@@ -15,3 +15,6 @@
 - Photo by Thomas P: https://www.pexels.com/photo/houses-in-village-24524484/
 - Photo from https://stackoverflow.com/questions/53162923/get-a-location-image-from-google-map-with-a-mark-for-free
 - Photo by Gustavo Fring: https://www.pexels.com/photo/man-in-black-and-white-plaid-long-sleeve-shirt-sitting-beside-a-lawn-mower-5163419/
+
+## Videos
+= [How To Create Image Gallery in JavaScript](https://youtu.be/gzXyRa7jwk4)
