@@ -168,6 +168,17 @@ h6 {
   }
 }
 
+/* About */
+
+#about-img {
+  width: 300px; /* Full width of the parent */
+  max-width: 40vw; /* Adjust as necessary to match */
+  padding: 20px; /* Add padding for consistency */
+  @media (max-width: 768px) {
+    max-width: 90%;
+  }
+}
+
 /* Contact */
 
 #contact {
