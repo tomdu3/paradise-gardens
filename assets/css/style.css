@@ -40,6 +40,7 @@ h6 {
   overflow-wrap: break-word;
 }
 
+
 #root,
 #__next {
   isolation: isolate;
@@ -54,12 +55,31 @@ h6 {
   background-color: lightgray;
   text-shadow: 1px 1px 1px rgb(80, 71, 71), -1px 1px 1px rgb(80, 71, 71),
     -1px -1px 1px rgb(80, 71, 71), 1px -1px 1px rgb(80, 71, 71);
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
+}
+
+/* Navigation */
+.nav-link {
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
 }
 
 /* Hero */
 #hero-text {
   position: relative;
   z-index: 1;
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
 }
 
 #hero-img {
