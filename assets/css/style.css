@@ -226,3 +226,14 @@ h6 {
     }
   }
 }
+
+/* Footer */
+.social-icons {
+  li {
+    list-style: none;
+    font-size: xx-large;
+    @media (max-width: 768px) {
+      font-size: x-large;
+    }
+  }
+}
